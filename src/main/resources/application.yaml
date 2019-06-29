@@ -1,0 +1,26 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  info:
+    git:
+      mode: full
+  endpoints:
+    web:
+      exposure:
+        include: info, health, env, loggers, logfile, beans, metrics
+
+server:
+  port: 8083
+spring:
+  application:
+    name: students
+  datasource:
+    url: jdbc:postgresql://localhost/vsite
+    #url: jdbc:postgresql://localhost:5432/vsite
+    username: vsite
+    password: vsite
+  jpa:
+    show-sql: true
+#    hibernate:
+#      ddl-auto: create-drop

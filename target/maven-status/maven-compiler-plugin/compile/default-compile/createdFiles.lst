@@ -1,0 +1,13 @@
+hr\vsite\njp\students\domain\StudentMapperImpl.class
+hr\vsite\njp\students\infrastracture\rest\StudentRestMapper.class
+hr\vsite\njp\students\domain\Student.class
+hr\vsite\njp\students\infrastracture\rest\StudentRestMapperImpl.class
+hr\vsite\njp\students\domain\StudentsManager.class
+hr\vsite\njp\students\infrastracture\rest\StudentRestDTO.class
+hr\vsite\njp\students\domain\StudentDTO.class
+hr\vsite\njp\students\StudentsApplication.class
+hr\vsite\njp\students\infrastracture\rest\StudentsService.class
+hr\vsite\njp\students\domain\StudentMapper.class
+hr\vsite\njp\students\domain\QStudent.class
+hr\vsite\njp\students\domain\StudentsManagerImpl.class
+hr\vsite\njp\students\domain\StudentsRepository.class
