@@ -39,6 +39,11 @@ public class StudentsManagerImpl implements StudentsManager{
     }
 
     @Override
+    public List<StudentDTO> customFindByName(String value) {
+        return mapper.toStudentDTO(repository.customFindByName(value));
+    }
+
+    @Override
     public void create(String name) {
 
     }

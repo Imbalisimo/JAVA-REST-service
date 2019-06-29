@@ -11,5 +11,7 @@ public interface StudentsManager {
 
     StudentDTO random();
 
+    List<StudentDTO> customFindByName(String value);
+
     void create(String name);
 }

@@ -33,6 +33,13 @@ public class StudentsService {
         return ResponseEntity.of(student.map(studentRestMapper::toStudentRest));
     }
 
+    @GetMapping("/students/byname/{name}")
+    public ResponseEntity<List<StudentRestDTO>> students(@PathVariable(name = "name") /*@RequestParam(name = "text")*/ String name){
+        LOGGER.trace("students entry {}", name);
+        List<StudentDTO> studentDTOS = studentsManager.customFindByName(name);
+        return ResponseEntity.ok(studentRestMapper.toStudentRest(studentDTOS));
+    }
+
     @GetMapping("/students/")
     public ResponseEntity<List<StudentRestDTO>> proverbs() {
 
